@@ -1,0 +1,124 @@
+body{
+    margin: 0 auto;
+    overflow-y: scroll;
+    background-color: rgba(48, 47, 46, 0.137);
+}
+#library{
+    margin-top: 2vw;
+    display: grid;
+    row-gap: 2vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    
+}
+#place{
+    bottom: 0; 
+    position: fixed;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    transition: bottom 0.8s,background-color 0.8s;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0 -5px 10px rgb(172, 172, 172);
+}
+#newbook{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+   
+   
+}
+#newbook > i{
+    color: rgb(172, 172, 172);
+    font-size: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.book{ 
+    height: 20vw;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#library > div{
+    background-color: rgb(172, 172, 172);
+  
+}
+#library > div:nth-child(even){
+    background-color: white;
+}
+#form{
+    position: fixed;
+    width:100%;
+    height: 500px;
+    bottom: -500px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    transition: bottom 0.8s,background-color 0.8s;
+    background-color: white;
+}
+.wrapper{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 8px;
+    height: fit-content;
+    font-weight: bolder;
+    width: 30vw;
+}
+.wrapper > div{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    background-color: rgb(172, 172, 172);
+}
+.wrapper > div > input{
+    height: 100%;
+    border: 1px solid black;
+    flex: 1;
+    box-sizing: border-box;
+    width: auto;
+}
+
+.wrapper> div > label{
+    flex: 0.3;
+    text-align: center;
+    align-self: center;
+    margin-left: 30px; 
+}
+.wrapper>div:nth-child(4) > label{
+    flex: 3;
+}
+.wrapper>div:nth-child(4) > input{
+    height: 80%;
+    flex: 1;
+}
+.wrapper>div:nth-child(5) > input{
+    height: 80%;
+    flex: .3;
+    color: black;
+    background-color: inherit;
+
+    border: 2px solid black;
+}
+.wrapper>div:nth-child(5){
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.wrapper > div > input[type="text"]{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+}
+.wrapper > div > input[type="submit"]{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 8px;
+    font-size: large;
+    font-weight: bolder;
+}
